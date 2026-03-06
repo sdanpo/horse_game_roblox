@@ -1,0 +1,48 @@
+{
+  "name": "StarlightStables",
+  "tree": {
+    "$className": "DataModel",
+
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "GameManager":       { "$path": "src/ServerScriptService/GameManager.server.lua" },
+      "PlayerDataManager": { "$path": "src/ServerScriptService/PlayerDataManager.server.lua" },
+      "HorseManager":      { "$path": "src/ServerScriptService/HorseManager.server.lua" },
+      "WorldManager":      { "$path": "src/ServerScriptService/WorldManager.server.lua" },
+      "RaceManager":       { "$path": "src/ServerScriptService/RaceManager.server.lua" },
+      "SocialManager":     { "$path": "src/ServerScriptService/SocialManager.server.lua" }
+    },
+
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Modules": {
+        "$className": "Folder",
+        "GameConfig":      { "$path": "src/ReplicatedStorage/Modules/GameConfig.lua" },
+        "HorseData":       { "$path": "src/ReplicatedStorage/Modules/HorseData.lua" },
+        "WorldData":       { "$path": "src/ReplicatedStorage/Modules/WorldData.lua" },
+        "ShopData":        { "$path": "src/ReplicatedStorage/Modules/ShopData.lua" },
+        "AchievementData": { "$path": "src/ReplicatedStorage/Modules/AchievementData.lua" }
+      },
+      "RemoteEvents": {
+        "$className": "Folder"
+      }
+    },
+
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "HorseController":      { "$path": "src/StarterPlayerScripts/HorseController.client.lua" },
+        "CameraController":     { "$path": "src/StarterPlayerScripts/CameraController.client.lua" },
+        "UIManager":            { "$path": "src/StarterPlayerScripts/UIManager.client.lua" },
+        "SoundManager":         { "$path": "src/StarterPlayerScripts/SoundManager.client.lua" },
+        "AtmosphereController": { "$path": "src/StarterPlayerScripts/AtmosphereController.client.lua" }
+      }
+    },
+
+    "Workspace": {
+      "$className": "Workspace",
+      "WorldSetup": { "$path": "src/Workspace/WorldSetup.lua" }
+    }
+  }
+}
